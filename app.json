@@ -1,16 +1,15 @@
 {
-    "name": "File Store Bot",
-    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid",
+    "name": "Telegram Files Store Bot",
+    "description": "A Telegram Files Store Bot in Pyrogram by @LazyDeveloperr",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/PredatorHackerzZ/TG-FileStore",
-    "website": "https://telegram.dog/PredatorHackerzZ",
-    "success_url": "https://t.me/TeleRoidGroup",
-    "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg",
+    "repository": "https://github.com/LazyDeveloperr/MissRozy",
+    "website": "https://telegram.dog/LazyDeveloperr",
+    "success_url": "https://t.me/LazyDeveloperr",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
@@ -39,6 +38,26 @@
         },
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+        },
+        "BANNED_USERS": {
+            "description": "Banned unwanted members",
+            "required": false
+        },
+        "BANNED_CHAT_IDS": {
+            "description": "Banned unwanted channel IDs",
+            "required": false
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "Broadcast with Forward Tag or as Copy(Without Forward Tag). Value should be True/False !!",
+            "required": false
+        },
+        "FORWARD_AS_COPY": {
+            "description": "If True all messages will be forwarder As Copy. If False all messages will be forwarder with Forward Tag. Value should be True/False !!",
+            "required": false
+        },
+        "LAZY_PIC": {
+            "description": "Bot Start up Picture . Get it from telegraph boy",
+            "required": true
         }
     },
     "buildpacks": [
@@ -49,7 +68,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "eco"
+            "size": "free"
         }
     }
 }
